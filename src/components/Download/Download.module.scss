@@ -1,0 +1,42 @@
+.download {
+    display: flex;
+    align-items: center;
+    &__actions {
+        display: flex;
+        align-items: center;
+        &-item{
+            margin: 0 5px;
+            display: flex;
+            align-items: center;
+        }
+        a{
+            display: flex;
+            align-items: center;
+        }
+        select {
+            background-color: #eee;
+            border: 0;
+            padding: 5px;
+            border-radius: 4px;
+            font-size: 12px;
+            outline: none;
+        }
+        button {
+            background-color: transparent;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            padding: 0;
+            position: relative;
+            &:hover {
+                svg {
+                    fill: #000 !important;
+                }
+            }
+        }
+    }
+
+    &__brand-selected {
+        margin-left: 10px;
+    }
+}

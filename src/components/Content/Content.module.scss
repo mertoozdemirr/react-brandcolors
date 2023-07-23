@@ -1,0 +1,26 @@
+main {
+    flex: 1;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 24px;
+    background: white;
+    border-bottom: solid 1px #e0e0e0;
+    z-index: 10;
+    &__collection {
+        color: #607d8b;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        &:hover {
+            color: #607d8b !important;
+        }
+        svg {
+            margin-right: 8px;
+        }
+    }
+}

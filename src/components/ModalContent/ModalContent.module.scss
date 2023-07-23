@@ -1,0 +1,56 @@
+.about-modal {
+    position: relative;
+    max-width: 720px;
+    margin: auto;
+    padding: 4vw;
+    background-color: white;
+    -webkit-box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
+
+    &__overlay{
+        position: fixed;
+        width: 100%;
+        height: 100%;           
+        left: 0;
+        top: 0;     
+        background-color: rgb(255 255 255 / 80%);
+        display: flex;
+        justify-content: center;
+    }
+
+    &__content {
+
+        h2 {
+            margin-bottom: 0.7em;
+            font-size: 24px;
+            font-weight: bold;
+            color: #263238;
+        }
+        p {
+            strong,a{
+                font-weight: bold;
+                color: #263238;
+            }
+        }
+        p+p{
+            margin-top: 1.4em;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+            position: relative;
+            left: 2px;
+        }
+    }
+}

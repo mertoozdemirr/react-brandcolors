@@ -1,0 +1,62 @@
+.brand {
+    &__item {
+        position: relative;
+        padding: 15px 15px 15px 0;
+        margin-left: 15px;
+        border-bottom: solid 1px #e0e0e0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        svg {
+            position: absolute;
+            left: -28px;
+            background-color: #fff;
+            padding: 5px;
+        }
+
+        &--selected {
+            .brand__title {
+                font-weight: bold;
+            }
+            .brand__colors {
+                &-item {
+                    flex: 1;
+                    text-indent: 0;
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    &__title {
+        font-size: 20px;
+        line-height: 1.2;
+        color: #263238;
+        font-weight: normal;
+        flex-shrink: 0;
+        margin-right: 20px;
+        width: 20%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+    }
+    &__colors {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        &-item {
+            background-color: var(--bgColor);
+            width: 60px;
+            height: 40px;
+            padding: 8px;
+            margin: 5px;
+            color: var(--textColor);
+            font-size: 14px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            text-indent: -9999px;
+        }
+    }
+}
